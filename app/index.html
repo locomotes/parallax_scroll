@@ -17,37 +17,53 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+    <link rel="stylesheet" type="text/css" href="../bower_components/fullpage.js/jquery.fullPage.css" />
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
-
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-
-        <li>Sass</li>
-
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
+    <div id="menu-container">
+      <ul id="menu">
+        <li data-menuanchor="fourthPage">
+          <a href="#fourthPage">Fourth Section</a>
+        </li>
+        <li data-menuanchor="thirdPage">
+          <a href="#thirdPage">Third Section</a>
+        </li>
+        <li data-menuanchor="secondPage">
+          <a href="#secondPage">Second Section</a>
+        </li>
+        <li data-menuanchor="firstPage">
+          <a href="#firstPage">First Section</a>
+        </li>
       </ul>
-      <p>Don't forget to update your readme file!!</p>
     </div>
+
+    <div id="fullpage">
+      <div class="section" data-anchor="firstPage">Section 1
+        <div class="slide"> Slide 1 </div>
+        <div class="slide"> Slide 2 </div>
+        <div class="slide"> Slide 3 </div>
+        <div class="slide"> Slide 4 </div>
+      </div>
+      <div class="section" data-anchor="secondPage">Section 2</div>
+      <div class="section" data-anchor="thirdPage">Section 3</div>
+      <div class="section" data-anchor="fourthPage">Section 4</div>
+    </div>
+
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+    <!-- fullpage.js stuff -->
+    <script src="../bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="../bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="../bower_components/fullpage.js/jquery.fullPage.js"></script>
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
