@@ -3,32 +3,75 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
+
+$mobile: new-breakpoint(min-width 768px);
+
+@mixin border {
+  border: solid 1px black;
+}
+
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+.inner-container {
+  @include media($mobile) {
+    @include border;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+  }
+}
+
+#fp-nav {
+  display: none;
+  @include media($mobile) {
+    display: block;
+    margin-right: 50px;
+  }
+}
+
+.section {
+  text-align: center;
+}
+
 #menu-container {
-  #menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 40px;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    li {
-      list-style-type: none;
-      display: inline;
-      float: right;
-      padding: 10px;
-      a {
-        text-decoration: none;
+  background: rgba(0, 0, 0, 0.7);
+  height: 95px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  #menu-inner-container {
+    #menu {
+      li {
+        list-style-type: none;
+        display: block;
+        float: right;
+        padding: 10px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: blue;
+        }
       }
-      a:hover {
-        color: blue;
-      }
+    }
+    // .hero_name {
+    //   color: white;
+    // }
+    @include media($mobile) {
+      border: solid 1px white;
+      margin: 0 auto;
+      height: 100%;
+      width: 80%;
     }
   }
 }
