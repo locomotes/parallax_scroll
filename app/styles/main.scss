@@ -22,6 +22,10 @@ body {
     margin: 0 auto;
     height: 100%;
     width: 80%;
+    // be sure to remove
+    p {
+      margin-top: 200px;
+    }
   }
 }
 
