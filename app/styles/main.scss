@@ -24,33 +24,8 @@ body {
   color: #333;
 }
 
-.inner-container {
-  @include media($mobile) {
-    @include border;
-    margin: 0 auto;
-    height: 100%;
-    width: 80%;
-    // be sure to remove
-    p {
-      margin-top: 200px;
-    }
-  }
-}
-
-#fp-nav {
-  display: none;
-  @include media($mobile) {
-    display: block;
-    margin-right: 50px;
-  }
-}
-
-.section {
-  text-align: center;
-}
-
 #mobile-menu-container {
-  background: rgba(0, 0, 0, 0.7);
+  // background: rgba(0, 0, 0, 0.7);
   height: 95px;
   position: fixed;
   top: 0;
@@ -67,6 +42,8 @@ body {
     margin-bottom: $base-line-height;
     position: relative;
     outline: none;
+    margin-top: 15px;
+    margin-left: 15px;
 
     img {
       height: 1.3em;
@@ -163,3 +140,51 @@ body {
     display: block;
   }
 }
+
+.inner-container {
+  @include media($mobile) {
+    @include border;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    // be sure to remove
+    p {
+      margin-top: 200px;
+    }
+  }
+}
+
+#fp-nav {
+  display: none;
+  @include media($mobile) {
+    display: block;
+    margin-right: 50px;
+  }
+}
+
+.section {
+  text-align: center;
+}
+
+#hero-container {
+  background: url(../images/three.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
