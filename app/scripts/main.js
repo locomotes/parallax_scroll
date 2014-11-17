@@ -18,11 +18,11 @@ $(document).ready(function() {
 // 	}
 // });
 
-$(window).scroll(function() {
-	if ($("li").hasClass("active")) {
-		$("li").css('text-decoration', 'underline');
-	}
-});
+// $(window).scroll(function() {
+// 	if ($("li").hasClass("active")) {
+// 		$("li").css('text-decoration', 'underline');
+// 	}
+// });
 
 $(document).ready(function(){
   $('.js-menu-trigger').on('click touchstart', function(e){
@@ -38,3 +38,16 @@ $(document).ready(function(){
   });
 });
 
+
+// Bind the event.
+$(window).hashchange( function(){
+// Alerts every time the hash changes!
+	// alert( location.hash );
+		if (location.hash === "#heroPage") {
+		$('#menu-container').css('background', 'none');
+	} else {
+		$('#menu-container').css('background', 'black');
+	}
+})
+// Trigger the event (useful on page load).
+$(window).hashchange();
