@@ -1,15 +1,26 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-    	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+    	sectionsColor: ['#f2f2f2', '#ffffff', '#7BAABE', 'whitesmoke', '#000'],
     	anchors: ['heroPage', 'aboutPage', 'educationPage', 'awardsPage', 'publicationsPage', 'researchPage', 'teachingPage', 'skillsPage'],
     	menu: '#menu',
     	navigation: true
     });
 });
 
-$("a").click(function() {
+// $("a").click(function() {
+	// if ($("li").hasClass("active")) {
+	// 	$("li").css('text-decoration', 'underline');
+	// }
+// 	if ($('a[href*="#heroPage"]')) {
+// 		$('#menu-container').css('background', 'orange');
+// 	} else {
+// 		$('#menu-container').css('background', 'black');
+// 	}
+// });
+
+$(window).scroll(function() {
 	if ($("li").hasClass("active")) {
-		console.log("test");
+		$("li").css('text-decoration', 'underline');
 	}
 });
 
@@ -26,3 +37,4 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
+

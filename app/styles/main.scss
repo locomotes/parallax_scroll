@@ -100,7 +100,7 @@ body {
 
 #menu-container {
   display: none;
-  background: rgba(0, 0, 0, 0.7);
+  // background: rgba(255, 255, 255, 0.1);
   height: 95px;
   position: fixed;
   top: 0;
@@ -110,19 +110,22 @@ body {
   padding: 0;
   margin: 0;
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
   #menu-inner-container {
     #menu {
+      margin-top: 20px;
       li {
         list-style-type: none;
         display: block;
         float: right;
-        padding: 10px;
+        padding: 12px;
         a {
           text-decoration: none;
+          text-transform: capitalize;
           color: white;
         }
         a:hover {
-          color: blue;
+          color: grey;
         }
       }
     }
@@ -130,7 +133,7 @@ body {
     //   color: white;
     // }
     @include media($mobile) {
-      border: solid 1px white;
+      // border: solid 1px white;
       margin: 0 auto;
       height: 100%;
       width: 80%;
@@ -172,6 +175,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  .inner-container {
+    color: white;
+  }
 }
 
 
