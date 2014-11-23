@@ -40,12 +40,12 @@ $(document).ready(function(){
 
 
 // Bind the event.
-// $(window).hashchange( function(){
-// 	if (location.hash === "#heroPage") {
-// 		$('#menu-container').css('background', 'none');
-// 	} else {
-// 		$('#menu-container').css('background', 'black');
-// 	}
-// });
+$(window).hashchange( function(){
+	if (location.hash === "#heroPage") {
+		$('#menu-container').css('background', 'none');
+	} else {
+		$('#menu-container').css('background', 'black');
+	}
+});
 // Trigger the event (useful on page load).
-// $(window).hashchange();
+$(window).hashchange();
