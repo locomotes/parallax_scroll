@@ -14,6 +14,8 @@ $sliding-menu-border: 1px solid $sliding-menu-border-color;
 $sliding-menu-background-hover: $base-accent-color;
 $sliding-menu-color-hover: #fff;
 
+$black: #090A0B;
+
 @mixin border {
   border: solid 1px black;
 }
@@ -44,6 +46,8 @@ body {
     outline: none;
     margin-top: 15px;
     margin-left: 15px;
+    background: none;
+    border: 1px solid white;
 
     img {
       height: 1.3em;
@@ -113,12 +117,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   #menu-inner-container {
     #menu {
-      margin-top: 20px;
+      margin-top: 35px;
       li {
         list-style-type: none;
         display: block;
         float: right;
         padding: 12px;
+        margin: 0 auto;
         a {
           text-decoration: none;
           text-transform: capitalize;
@@ -145,23 +150,40 @@ body {
 }
 
 .inner-container {
+  h2 {
+    font-family: Montserrat;
+    color: $black;
+    font-size: 38px;
+  }
+  .page-header {
+    width: 45%;
+    border-bottom: 3px solid $black;
+    margin: 20px auto;
+  }
+  .section-main {
+    color: $black;
+    font-size: 18px;
+    font-family: Merriweather;
+  }
+  .nav-down {
+      width: 55px;
+      height: 55px;
+      border-radius: 30px;
+      // border: 1px solid white;
+      position: fixed;
+      top: 90%;
+      left: 48%;
+      .fa-angle-double-down {
+        font-size: 38px;
+        color: white;
+        margin-top: 10px;
+      }
+    }
   @include media($mobile) {
-    @include border;
+    // @include border;
     margin: 0 auto;
     height: 100%;
     width: 80%;
-    // be sure to remove
-    // p {
-    //   margin-top: 200px;
-    // }
-    .nav-down {
-      width: 75px;
-      height: 75px;
-      border-radius: 47px;
-      border: 1px solid white;
-      margin: 0 auto;
-      margin-top: 95%;
-    }
   }
 }
 
@@ -175,6 +197,11 @@ body {
 
 .section {
   text-align: center;
+}
+
+.top-container {
+  @include border; 
+  width: 100%;
 }
 
 #hero-container {
@@ -191,7 +218,7 @@ body {
       width: 400px;
       height: 150px;
       margin: 0 auto;
-      margin-top: -275px;
+      margin-top: -40%;
       h1 {
         font-family: Merriweather, serif;
         font-size: 40px;
@@ -209,7 +236,22 @@ body {
   }
 }
 
-
+#about-container {
+  .inner-container {
+    .top-container {
+      .about-info {
+        @include border;
+        margin: 20px auto;
+        width: 450px;
+        .headshot {
+          width: 175px;
+          border-radius: 95px;
+          // float: left;
+        }
+      }
+    }
+  }
+}
 
 
 

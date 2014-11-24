@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-    	sectionsColor: ['#f2f2f2', '#ffffff', '#7BAABE', 'whitesmoke', '#000'],
+    	sectionsColor: ['#f2f2f2', '#BCBDC1', '#7BAABE', 'whitesmoke', '#000'],
     	anchors: ['heroPage', 'aboutPage', 'educationPage', 'awardsPage', 'publicationsPage', 'researchPage', 'teachingPage', 'skillsPage'],
     	menu: '#menu',
     	navigation: true
@@ -45,6 +45,9 @@ $(window).hashchange( function(){
 		$('#menu-container').css('background', 'none');
 	} else {
 		$('#menu-container').css('background', 'black');
+		$('.sliding-menu-button').css('background-color','rgba(0, 0, 0, 0.4)');
+		$('.sliding-menu-button').css('border','none');
+		$('.nav-down').css('background-color','rgba(0, 0, 0, 0.4)')
 	}
 });
 // Trigger the event (useful on page load).
