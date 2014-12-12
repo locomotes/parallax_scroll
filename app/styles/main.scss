@@ -5,7 +5,7 @@
 
 // Custom Styles
 
-$mobile: new-breakpoint(min-width 768px);
+$mobile: new-breakpoint(min-width 1250px);
 
 $sliding-menu-border-color: $dark-gray;
 $sliding-menu-background: lighten($sliding-menu-border-color, 5);
@@ -118,10 +118,11 @@ body {
   #menu-inner-container {
     #menu {
       margin-top: 35px;
+      text-align: center;
       li {
         list-style-type: none;
-        display: block;
-        float: right;
+        display: inline-block;
+        // float: right;
         padding: 12px;
         margin: 0 auto;
         a {
@@ -156,7 +157,7 @@ body {
     font-size: 38px;
   }
   .page-header {
-    width: 45%;
+    width: 350px;
     border-bottom: 3px solid $black;
     margin: 20px auto;
   }
@@ -228,9 +229,9 @@ body {
         font-size: 22px;
       }
       @include media($mobile) {
-        margin-top: 175px;
-        margin-right: 5%;
-        float: right;
+        margin-top: 35%
+        // margin-right: 5%;
+        // float: right;
       }
     }
   }
@@ -239,6 +240,7 @@ body {
 #about-container {
   .inner-container {
     .top-container {
+      // margin-top: 20%;
       .about-info {
         @include border;
         margin: 20px auto;
@@ -250,6 +252,48 @@ body {
         }
       }
     }
+    .bottom-container {
+      @include border;
+    }
+  }
+}
+
+#education-container {
+  .inner-container {
+    .education-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+      }
+  }
+}
+
+#publications-container {
+  .inner-container {
+    .publication-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+      }
+  }
+}
+
+#awards-container {
+  .inner-container {
+    .awards-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+        .award-date {
+          // display: inline;
+        }
+        .award-main-info {
+          // display: inline;
+        }
+      }
   }
 }
 

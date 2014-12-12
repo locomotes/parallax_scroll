@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-    	sectionsColor: ['#f2f2f2', '#BCBDC1', '#7BAABE', 'whitesmoke', '#000'],
+    	sectionsColor: ['#f2f2f2', '#f3f4f4', '#f3f4f4', '#f3f4f4', '#f3f4f4'],
     	anchors: ['heroPage', 'aboutPage', 'educationPage', 'awardsPage', 'publicationsPage', 'researchPage', 'teachingPage', 'skillsPage'],
     	menu: '#menu',
     	navigation: true
