@@ -161,6 +161,14 @@ body {
     border-bottom: 3px solid $black;
     margin: 20px auto;
   }
+  .busy-page-header {
+    font-family: Montserrat;
+    color: $black;
+    font-size: 34px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
   .section-main {
     color: $black;
     font-size: 18px;
@@ -237,6 +245,10 @@ body {
   }
 }
 
+.inner-container {
+  @include border;
+}
+
 #about-container {
   .inner-container {
     .top-container {
@@ -266,6 +278,18 @@ body {
         margin: 0 auto;
         width: 450px;
       }
+      .skills-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+      }
+      .spec-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+      }
   }
 }
 
@@ -280,6 +304,27 @@ body {
   }
 }
 
+#abstracts-container {
+  .inner-container {
+    .abstracts-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+        .abstracts-space {
+          // .abstracts-date {
+          //   @include border;
+          //   @include span-columns(2 of 12);
+          // }
+          // .abstracts-content {
+          //   @include border;
+          //   @include span-columns(10 of 12);
+          // }
+        }
+      }
+  }
+}
+
 #awards-container {
   .inner-container {
     .awards-box {
@@ -287,17 +332,74 @@ body {
         @include border;
         margin: 0 auto;
         width: 450px;
-        .award-date {
-          // display: inline;
-        }
-        .award-main-info {
-          // display: inline;
+        .award-wrap {
+          .award-date {
+            // display: inline;
+            @include border;
+            @include span-columns(2 of 12);
+          }
+          .award-main-info {
+            // display: inline;
+            @include border;
+            @include span-columns(10 of 12);
+          }
         }
       }
   }
 }
 
+#research-container {
+  .inner-container {
+    .research-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+        .research-head {
+          .research-style {
+            font-style: italic;
+          }
+        }
+      }
+  }
+}
 
+#teaching-container {
+  .inner-container {
+    .teaching-box {
+      text-align: left;
+      @include border;
+      margin: 0 auto;
+      width: 450px;
+      .teaching-head {
+        .teaching-style {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+#talks-container {
+  .inner-container {
+    .talks-box {
+        text-align: left;
+        @include border;
+        margin: 0 auto;
+        width: 450px;
+        .talk-space {
+          .talk-date {
+            @include border;
+            @include span-columns(2 of 12);
+          }
+          .talk-content {
+            @include border;
+            @include span-columns(10 of 12);
+          }
+        }
+      }
+  }
+}
 
 
 

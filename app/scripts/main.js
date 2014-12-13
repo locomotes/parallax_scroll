@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
     	sectionsColor: ['#f2f2f2', '#f3f4f4', '#f3f4f4', '#f3f4f4', '#f3f4f4'],
-    	anchors: ['heroPage', 'aboutPage', 'educationPage', 'awardsPage', 'publicationsPage', 'researchPage', 'teachingPage', 'skillsPage'],
+    	anchors: ['heroPage', 'aboutPage', 'educationPage', 'awardsPage', 'publicationsPage','abstractsPage', 'researchPage', 'teachingPage', 'talksPage'],
     	menu: '#menu',
     	navigation: true
     });
