@@ -15,9 +15,15 @@ $sliding-menu-background-hover: $base-accent-color;
 $sliding-menu-color-hover: #fff;
 
 $black: #090A0B;
+// $blue: #489AC9;
+$blue: #296BC8;
 
 @mixin border {
   border: solid 1px black;
+}
+
+a {
+  color: $blue;
 }
 
 body {
