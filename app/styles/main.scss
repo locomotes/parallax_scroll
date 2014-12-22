@@ -17,6 +17,10 @@ $sliding-menu-color-hover: #fff;
 $black: #090A0B;
 // $blue: #489AC9;
 $blue: #296BC8;
+$green: #50BEB5;
+$grey: #999999;
+
+$dark-blue: #3F4D58;
 
 @mixin border {
   border: solid 1px black;
@@ -25,6 +29,15 @@ $blue: #296BC8;
 a {
   color: $blue;
 }
+
+.dates {
+  color: $grey;
+}
+
+.abstracts-date {
+  color: $grey;
+}
+
 
 body {
   background: #fafafa;
@@ -160,7 +173,10 @@ body {
   h2 {
     font-family: Montserrat;
     color: $black;
-    font-size: 38px;
+    font-size: 28px;
+    @include media($mobile) {
+      font-size: 38px; 
+    }
   }
   .page-header {
     width: 350px;
@@ -175,11 +191,10 @@ body {
     margin-top: 20px;
     margin-bottom: 8px;
   }
-  .section-main {
-    color: $black;
-    font-size: 18px;
-    font-family: Merriweather;
-  }
+  // .section-main {
+  //   color: $black;
+  //   font-family: Merriweather;
+  // }
   .nav-down {
       width: 55px;
       height: 55px;
@@ -272,6 +287,22 @@ body {
     }
     .bottom-container {
       @include border;
+      margin: 0 auto;
+      width: 450px;
+      .get-in-touch {
+        width: 100%;
+        .get-in-touch-icon-container {
+          @include border;
+          @include span-columns(4 of 12);
+          margin-bottom: 20px;
+          a {
+            color: $dark-blue;
+            .fa {
+              font-size: 40px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -343,6 +374,7 @@ body {
             // display: inline;
             @include border;
             @include span-columns(2 of 12);
+            text-align: right;
           }
           .award-main-info {
             // display: inline;
@@ -397,6 +429,8 @@ body {
           .talk-date {
             @include border;
             @include span-columns(2 of 12);
+            color: $grey;
+            text-align: right;
           }
           .talk-content {
             @include border;
