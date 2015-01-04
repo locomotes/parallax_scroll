@@ -5,7 +5,7 @@
 
 // Custom Styles
 
-$mobile: new-breakpoint(min-width 1550px);
+$mobile: new-breakpoint(min-width 1225px);
 $sm-mobile: new-breakpoint(min-width 850px);
 
 $sliding-menu-border-color: $dark-gray;
@@ -132,11 +132,11 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   #menu-inner-container {
     #menu {
-      margin-top: 35px;
+      margin-top: 25px;
       text-align: center;
       li {
         list-style-type: none;
@@ -165,11 +165,11 @@ body {
     }
   }
   @include media($sm-mobile) {
-    height: 185px;
+    height: 130px;
     display: block;
   }
   @include media($mobile) {
-    height: 120px;
+    height: 100px;
     display: block;
   }
 }
@@ -300,14 +300,14 @@ body {
         .headshot {
           width: 275px;
           border-radius: 5px;
-          margin-bottom: 8%;
+          margin-bottom: 2%;
           // float: left;
           @include media($sm-mobile) {
-            border-radius: 150px;
+            border-radius: 55px;
           }
           @include media($mobile) {
-            margin-top: 8%;
-            border-radius: 150px;
+            margin-top: 2%;
+            border-radius: 55px;
           }
         }
         .section-main {
@@ -325,7 +325,7 @@ body {
     }
     .bottom-container {
       // @include border;
-      padding-top: 5%;
+      padding-top: 2%;
       margin: 0 auto;
       width: 450px;
       .get-in-touch {
@@ -366,6 +366,19 @@ body {
       // @include media($mobile) {
       //   // margin-top: 90px;
       // }
+    }
+    .media-box {
+      text-align: left;
+      // @include border;
+      margin: 0 auto;
+      width: 450px;
+      @include media($sm-mobile) {
+        text-align: center;
+        width: 70%;
+      }
+       @include media($mobile) {
+        width: 60%;
+      }
     }
     .skills-box {
       text-align: left;
