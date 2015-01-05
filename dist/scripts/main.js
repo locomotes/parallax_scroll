@@ -7,22 +7,6 @@ $(document).ready(function() {
     });
 });
 
-// $("a").click(function() {
-	// if ($("li").hasClass("active")) {
-	// 	$("li").css('text-decoration', 'underline');
-	// }
-// 	if ($('a[href*="#heroPage"]')) {
-// 		$('#menu-container').css('background', 'orange');
-// 	} else {
-// 		$('#menu-container').css('background', 'black');
-// 	}
-// });
-
-// $(window).scroll(function() {
-// 	if ($("li").hasClass("active")) {
-// 		$("li").css('text-decoration', 'underline');
-// 	}
-// });
 
 $(document).ready(function(){
   $('.js-menu-trigger').on('click touchstart', function(e){
@@ -38,8 +22,6 @@ $(document).ready(function(){
   });
 });
 
-
-// Bind the event.
 $(window).hashchange( function(){
 	if (location.hash === "#heroPage") {
 		$('#menu-container').css('background', 'none');

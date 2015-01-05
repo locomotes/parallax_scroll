@@ -132,11 +132,11 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   #menu-inner-container {
     #menu {
-      margin-top: 25px;
+      margin-top: 15px;
       text-align: center;
       li {
         list-style-type: none;
@@ -165,11 +165,11 @@ body {
     }
   }
   @include media($sm-mobile) {
-    height: 130px;
+    height: 110px;
     display: block;
   }
   @include media($mobile) {
-    height: 100px;
+    height: 90px;
     display: block;
   }
 }
@@ -178,13 +178,13 @@ body {
   h2 {
     font-family: Montserrat;
     color: $black;
-    font-size: 28px;
+    font-size: 18px;
     @include media($sm-mobile) {
-      margin-top: 115px;
+      margin-top: 105px;
     }
     @include media($mobile) {
-      font-size: 38px;
-      margin-top: 90px;
+      font-size: 28px;
+      margin-top: 80px;
     }
   }
   .page-header {
@@ -196,17 +196,18 @@ body {
     text-align: left;
     font-family: Montserrat;
     color: $black;
-    font-size: 34px;
+    font-size: 18px;
     text-align: left;
     // margin-top: 20px;
     margin-bottom: 8px;
     @include media($sm-mobile) {
+      font-size: 22px;
       text-align: center;
-      margin-top: 5%;
+      margin-top: 2%;
     }
-    // @include media($mobile) {
-    //   margin-top: 8%;
-    // }
+    @include media($mobile) {
+      font-size: 28px;
+    }
   }
   .nav-down {
       width: 55px;
@@ -228,12 +229,6 @@ body {
         margin-top: 10px;
       }
     }
-  // @include media($mobile) {
-  //   padding-top: 61px;
-  //   margin: 0 auto;
-  //   height: 100%;
-  //   width: 80%;
-  // }
 }
 
 #fp-nav {
@@ -312,15 +307,15 @@ body {
         }
         .section-main {
           @include media ($sm-mobile) {
-            font-size: 1.2em;
+            font-size: 1em;
           }
         }
         @include media($sm-mobile) {
-          width: 70%;
+          width: 90%;
         }
       }
       @include media($mobile) {
-        width: 60%;
+        width: 80%;
       }
     }
     .bottom-container {
@@ -354,6 +349,10 @@ body {
 
 #education-container {
   .inner-container {
+    margin: 0px;
+    h2 {
+      // margin-top;
+    }
     .education-box {
       text-align: left;
       // @include border;
@@ -420,7 +419,7 @@ body {
       .publication-box-head {
         text-align: center;
         margin: 5px 0;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: bold;
       }
       @include media($sm-mobile) {
@@ -428,7 +427,7 @@ body {
       }
        @include media($mobile) {
         // padding-bottom: 10%;
-        width: 65%;
+        width: 80%;
       }
     }
   }
@@ -472,7 +471,7 @@ body {
         width: 85%;
       }
       @include media($mobile) {
-        width: 65%;
+        width: 80%;
       }
     }
   }
@@ -486,7 +485,7 @@ body {
       margin: 0 auto;
       width: 450px;
       .award-category {
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: bold;
         text-align: center;
       }
@@ -497,7 +496,7 @@ body {
           text-align: right;
            @include media($sm-mobile) {
            @include span-columns(2 of 12);
-            margin-top: 8px;
+            margin-top: 4px;
           }
         }
         .award-main-info {
@@ -505,12 +504,12 @@ body {
           // @include border;
           @include media($sm-mobile) {
             @include span-columns(10 of 12);
-            margin-top: 8px;
+            margin-top: 4px;
           }
         }
       }
       @include media ($sm-mobile) {
-        width: 55%;
+        width: 85%;
       }
     }
   }
@@ -528,11 +527,12 @@ body {
           font-style: italic;
         }
         @include media ($sm-mobile) {
-          margin-top: 2%;
+          width: 90%;
+          margin-top: 4px;
         }
       }
       @include media ($sm-mobile) {
-        width: 65%;
+        width: 80%;
       }
     }
   }
