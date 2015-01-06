@@ -309,7 +309,7 @@ body {
         }
         .section-main {
           @include media ($sm-mobile) {
-            font-size: 1em;
+            font-size: 1.2em;
           }
         }
         @include media($sm-mobile) {
@@ -400,12 +400,12 @@ body {
       margin: 0 auto;
       width: 450px;
       @include media($sm-mobile) {
-        font-size: 14px;
+        // font-size: 14px;
         text-align: center;
         width: 60%;
       }
        @include media($mobile) {
-        font-size: 16px;
+        // font-size: 16px;
         // padding-bottom: 10%;
         width: 50%;
       }
